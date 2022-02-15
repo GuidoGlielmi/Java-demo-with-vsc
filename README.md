@@ -5,12 +5,12 @@ HOW TO CREATE A SPRING BOOT PROYECT FROM SCRATCH
   desde "start.spring.io"
 - luego desde el command pallet (F1) se ejecuta
   "Spring Initializr: Create a Maven Project"
-  -- seleccionar la última versión estable ( la que suele aparecer primero)
-  -- seleccionar el lenguaje Java
-  -- Ingresar el group id
-  -- Ingresar el artifact id (nombre del proyecto).
-  Un artifact de Maven es una estructura que soporta cualquier proyecto java.
-  Este proceso tiene varias partes:
+  - seleccionar la última versión estable ( la que suele aparecer primero)
+  - seleccionar el lenguaje Java
+  - Ingresar el group id
+  - Ingresar el artifact id (nombre del proyecto).
+    Un artifact de Maven es una estructura que soporta cualquier proyecto java.
+    Este proceso tiene varias partes:
   - validate : Simplemente comprueba que el proyecto tiene la estructura correcta
     y los ficheros están donde tienen que estar.
   - compile : compila el código.
@@ -25,7 +25,6 @@ HOW TO CREATE A SPRING BOOT PROYECT FROM SCRATCH
     que
     lo instalará en un repositorio Maven remoto al que otros usuarios podrán
     acceder (Nexus o Artifactory).
-  -
 - Seleccionar el package (jar -Java Archive- en la mayoría de los casos o
   war). Jar is a file format based on the popular ZIP file format and is used
   for aggregating many files into one. Although JAR can be used as a general
@@ -42,7 +41,6 @@ HOW TO CREATE A SPRING BOOT PROYECT FROM SCRATCH
     backward-compatible with existing applet code
     an open standard, fully extendable, and written in java
     the preferred way to bundle the pieces of a java applet
-  -
 - Seleccionar la version de Java (17)
 - Seleccionar las dependencias. Mínimamente "Spring web" y
   "SpringBoot Dev Tools"
