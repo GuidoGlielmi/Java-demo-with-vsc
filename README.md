@@ -1,58 +1,50 @@
-HOW TO CREATE A SPRING BOOT PROYECT FROM SCRATCH
+> ## How to create a Spring Boot project from scratch in VSC
 
 - Download "Java Extension Pack"
-- Spring Boot Extension Pack. Esto reemplaza al spring initializr, creado
-  desde "start.spring.io"
-- luego desde el command pallet (F1) se ejecuta
-  "Spring Initializr: Create a Maven Project"
-  - seleccionar la última versión estable ( la que suele aparecer primero)
-  - seleccionar el lenguaje Java
-  - Ingresar el group id
-  - Ingresar el artifact id (nombre del proyecto).
-    Un artifact de Maven es una estructura que soporta cualquier proyecto java.
-    Este proceso tiene varias partes:
-  - validate : Simplemente comprueba que el proyecto tiene la estructura correcta
-    y los ficheros están donde tienen que estar.
-  - compile : compila el código.
-  - test: Se encarga de pasar las pruebas unitarias , algo que siempre debiéramos
-    tener por lo tanto es otra fase importante y que Maven de alguna forma
-    refuerza.
-  - package: Recordemos que una cosa es compilar nuestro código y generar los
-    ficheros .class y otra cosa muy diferente es generar un empaquetado que se
-    pueda “reutilizar”.
-  - install: instala nuestro maven artifact en un repositorio de Maven.
-  - deploy: para que el artefacto pueda ser utilizado por otros developers, lo
-    que
-    lo instalará en un repositorio Maven remoto al que otros usuarios podrán
-    acceder (Nexus o Artifactory).
-- Seleccionar el package (jar -Java Archive- en la mayoría de los casos o
-  war). Jar is a file format based on the popular ZIP file format and is used
-  for aggregating many files into one. Although JAR can be used as a general
-  archiving tool, the primary motivation for its development was so that Java
-  applets and their requisite components (.class files, images and sounds) can
-  be downloaded to a browser in a single HTTP transaction, rather than opening
-  a new connection for each piece. This greatly improves the speed with which
-  an applet can be loaded onto a web page and begin functioning. Additionally,
-  individual entries in a JAR file may be digitally signed by the applet author
-  to authenticate their origin.
-  - JAR is:
+- Download "Spring Boot Extension Pack". This is an a alternative way to [Spring Initializr](https://start.spring.io)
+- Then, from the command pallet, execute "Spring Initializr: Create a Maven Project", and proceed to the following steps:
+  - Select the last stable version (usually appears first).
+  - Select the Java language.
+  - Enter the Group ID.
+  - Enter the artifact id (project's name).
+    A maven artifact is a structure that supports any Java project.
+    This process has several parts:
+    - validate : Checks if the project has the correct structure and the files are where they are supposed to be.
+    - compile : Compiles the code.
+    - test: Responsible for passing unit test, something very important that Maven reinforces in someway.
+    - package: Remember that compiling code and generating the .class files is very different to generating a reusable package.
+    - install: Installs a new Maven artifact in our Maven repository.
+    - deploy: So the artifact can be utilized for other developers, which installs a new remote repository other users will have access (Nexus o Artifactory).
+  - Select the package (jar -Java Archive, is the most popular one-, or
+    war).  
+    Jar is a file format based on the popular ZIP file format and is used
+    for aggregating many files into one. Although JAR can be used as a general
+    archiving tool, the primary motivation for its development was so that Java
+    applets and their requisite components (.class files, images and sounds) can
+    be downloaded to a browser in a single HTTP transaction, rather than opening
+    a new connection for each piece. This greatly improves the speed with which
+    an applet can be loaded onto a web page and begin functioning. Additionally,
+    individual entries in a JAR file may be digitally signed by the applet author
+    to authenticate their origin.  
+    _JAR_ is:
     - the only archive format that is cross-platform
     - the only format that handles audio and image files as well as class files
     - backward-compatible with existing applet code
     - an open standard, fully extendable, and written in java
     - the preferred way to bundle the pieces of a java applet
-- Seleccionar la version de Java (17)
-- Seleccionar las dependencias. Mínimamente "Spring web" y
-  "SpringBoot Dev Tools"
-- Seleccionar la carpeta destino para el proyecto.
+  - Select the preferred Java version.
+  - Select the dependencies. At least "Spring web" and "SpringBoot Dev Tools".
+  - Select destination folder for the project.
 
-_NOTES_
-
-It may be necessary to look for the jdk (ON WINDOWS) by inputting in the powershell:
-
-- dir /b /s java.exe
-
-And paste that directory (_scaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the settings.json file
-
-To use Github as a Maven repository, consider the following:
-http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html
+> ## _NOTES_
+>
+> It may be necessary to look for the jdk by inputting (_on windows_) in the powershell:
+>
+> `dir /b /s java.exe`
+>
+> And paste the outputted directory (_escaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the _settings.json_ file
+>
+> ##
+>
+> To use Github as a Maven repository, consider the following:
+> http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html
