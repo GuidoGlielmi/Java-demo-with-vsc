@@ -36,15 +36,23 @@ HOW TO CREATE A SPRING BOOT PROYECT FROM SCRATCH
   individual entries in a JAR file may be digitally signed by the applet author
   to authenticate their origin.
   - JAR is:
-    the only archive format that is cross-platform
-    the only format that handles audio and image files as well as class files
-    backward-compatible with existing applet code
-    an open standard, fully extendable, and written in java
-    the preferred way to bundle the pieces of a java applet
+    - the only archive format that is cross-platform
+    - the only format that handles audio and image files as well as class files
+    - backward-compatible with existing applet code
+    - an open standard, fully extendable, and written in java
+    - the preferred way to bundle the pieces of a java applet
 - Seleccionar la version de Java (17)
 - Seleccionar las dependencias. Mínimamente "Spring web" y
   "SpringBoot Dev Tools"
 - Seleccionar la carpeta destino para el proyecto.
+
+_NOTES_
+
+It may be necessary to look for the jdk (ON WINDOWS) by inputting in the powershell:
+
+- dir /b /s java.exe
+
+And paste that directory (_scaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the settings.json file
 
 To use Github as a Maven repository, consider the following:
 http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html
