@@ -15,11 +15,12 @@
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
+		<github.maven.repository>file:///G:/Documentos/VSC-Proyectos/Java/springboot-demo</github.maven.repository>
 	</properties>
 	<distributionManagement>
   	<repository>
   		<id>maven-repository</id>
-  		<url>https://github.com/GuidoGlielmi/Java-demo-with-vsc.git</url>
+  		<url>${github.maven.repository}</url>
   	</repository>
   </distributionManagement>
 	<dependencies>
