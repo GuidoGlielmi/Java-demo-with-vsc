@@ -40,4 +40,9 @@ public class UrlCheckController {
     }
     return returnMessage;
   }
+
+  @GetMapping("/tuvieja")
+  public String tuvieja() {
+    return "tuvieja";
+  }
 }

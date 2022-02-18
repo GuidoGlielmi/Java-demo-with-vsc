@@ -47,4 +47,5 @@
 > ##
 >
 > To use Github as a Maven repository, consider the following:
-> http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html
+> http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html  
+> https://dev.to/alexmercedcoder/create-java-spring-api-with-vscode-postgres-0-to-deploy-142
