@@ -23,7 +23,24 @@ public class StudentController {
     return studentService.getStudents();
   }
 
+  @PostMapping
+  public void addStudentService(@RequestBody Student student) {
+    studentService.addStudent(student);
+  }
+
+  @DeleteMapping(path = "{id}")
+  public void deleteStudentService(@PathVariable("id") long id) {
+    studentService.deleteStudent(id);
+  }
+
+  @PutMapping(path = "{id}")
+  public void updateStudentsService(@PathVariable("id") long id, @RequestParam(required = false) String name,
+      @RequestParam(required = false) String email) {
+    studentService.updateStudent(id, name, email);
+  }
+
   /*
+   * java -jar <...> --server.port=<SERVER_PORT>
    * POSTGRES-SQL
    * Commands should have a final semicolon, if not the don't work
    * https://www.postgresql.org/docs/current/libpq-envars.html
