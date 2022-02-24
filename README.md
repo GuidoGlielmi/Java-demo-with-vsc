@@ -36,16 +36,46 @@
   - Select the dependencies. At least "Spring web" and "SpringBoot Dev Tools".
   - Select destination folder for the project.
 
+##
+
+To use servlets the add the following dependencies:
+
+```
+<dependency>
+  <groupId>javax.servlet</groupId>
+  <artifactId>jstl</artifactId>
+</dependency>
+<dependency>
+  <groupId>org.apache.tomcat.embed</groupId>
+  <artifactId>tomcat-embed-jasper</artifactId>
+  <scope>provided</scope>
+</dependency>
+```
+
+Create a this folder structure:
+
+```
+ main/webapp/WEB-INF/views
+```
+
+And add the following lines to the applications.properties:
+
+```
+spring.mvc.view.prefix: /WEB-INF/views/
+spring.mvc.view.suffix: .jsp
+```
+
 > ## _NOTES_
 >
 > It may be necessary to look for the jdk by inputting (_on windows_) in the powershell:
 >
 > `dir /b /s java.exe`
 >
-> And paste the outputted directory (_escaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the _settings.json_ file
+> And paste the outputted directory, (without entering the _bin_ folder and _escaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the _settings.json_ file
 >
 > ##
 >
 > To use Github as a Maven repository, consider the following:
 > http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html  
 > https://dev.to/alexmercedcoder/create-java-spring-api-with-vscode-postgres-0-to-deploy-142
+> https://www.mytroubleshooting.com/2018/06/spring-boot-mvc-jsp-visual-studio-code.html?m=1
