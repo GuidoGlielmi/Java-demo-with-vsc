@@ -15,8 +15,7 @@
     - package: Remember that compiling code and generating the .class files is very different to generating a reusable package.
     - install: Installs a new Maven artifact in our Maven repository.
     - deploy: So the artifact can be utilized for other developers, which installs a new remote repository other users will have access (Nexus o Artifactory).
-  - Select the package (jar -Java Archive, is the most popular one-, or
-    war).  
+  - Select the package.
     Jar is a file format based on the popular ZIP file format and is used
     for aggregating many files into one. Although JAR can be used as a general
     archiving tool, the primary motivation for its development was so that Java
@@ -38,7 +37,7 @@
 
 ##
 
-To use servlets the add the following dependencies:
+To use servlets add the following dependencies:
 
 ```
 <dependency>
@@ -71,11 +70,11 @@ spring.mvc.view.suffix: .jsp
 >
 > `dir /b /s java.exe`
 >
-> And paste the outputted directory, (without entering the _bin_ folder and _escaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the _settings.json_ file
+> And paste the outputted directory, (without entering the _bin_ folder and _escaping backslashes_) as the value for the "java.jdt.ls.java.home" property in the _settings.json_ file. This is the same as setting an environment variable _JAVA_HOME_ in the OS.
 >
 > ##
 >
-> To use Github as a Maven repository, consider the following:
+> Useful links:  
 > http://www.lordofthejars.com/2011/09/questa-di-marinella-e-la-storia-vera.html  
-> https://dev.to/alexmercedcoder/create-java-spring-api-with-vscode-postgres-0-to-deploy-142
-> https://www.mytroubleshooting.com/2018/06/spring-boot-mvc-jsp-visual-studio-code.html?m=1
+> https://dev.to/alexmercedcoder/create-java-spring-api-with-vscode-postgres-0-to-deploy-142  
+> https://www.mytroubleshooting.com/2018/06/spring-boot-mvc-jsp-visual-studio-code.html?m=1  
